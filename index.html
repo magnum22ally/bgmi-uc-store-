@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGMI TOP UP STORE</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+        header { background: #2d2f8d; color: white; padding: 20px; text-align: center; }
+        .container { width: 90%; margin: auto; padding: 20px; }
+        .card { background: white; padding: 20px; margin: 15px; border-radius: 8px;
+                 box-shadow: 0 2px 6px rgba(0,0,0,0.2); text-align: center; }
+        img { max-width: 250px; height: auto; margin: 10px 0; }
+        footer { background: #2d2f8d; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+        .verify-section { background: #ffffff; padding: 20px; margin: 20px auto; border-radius: 8px;
+                          box-shadow: 0 2px 6px rgba(0,0,0,0.2); max-width: 500px; text-align: center; }
+        input[type=text] { padding: 10px; width: 80%; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #2d2f8d; color: white; padding: 10px 20px; border: none;
+                  border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #1e1f6e; }
+        #verifyResult { margin-top: 15px; font-weight: bold; }
+    </style>
+    <script>
+        function verifyID() {
+            var playerID = document.getElementById('playerID').value;
+            var resultDiv = document.getElementById('verifyResult');
+            if(playerID.trim() === "") {
+                resultDiv.innerHTML = "⚠️ Please enter a valid Player ID.";
+                resultDiv.style.color = "red";
+            } else {
+                resultDiv.innerHTML = "✅ Player ID " + playerID + " verified successfully!";
+                resultDiv.style.color = "green";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BGMI TOP UP STORE</h1>
+        <p>Instant UC Purchase via UPI</p>
+    </header>
+
+    <div class="verify-section">
+        <h2>Enter Your Player Character ID</h2>
+        <input type="text" id="playerID" placeholder="Enter your BGMI ID">
+        <br>
+        <button onclick="verifyID()">Verify</button>
+        <div id="verifyResult"></div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>5000 UC - ₹1000</h2>
+            <img src="assets/qr1.jpeg" alt="QR for 1000">
+        </div>
+        <div class="card">
+            <h2>15000 UC - ₹2000</h2>
+            <img src="assets/qr2.jpeg" alt="QR for 2000">
+        </div>
+        <div class="card">
+            <h2>25000 UC - ₹2500</h2>
+            <img src="assets/qr3.jpeg" alt="QR for 2500">
+        </div>
+        <div class="card">
+            <h2>50000 UC - ₹4500</h2>
+            <img src="assets/qr4.jpeg" alt="QR for 4500">
+        </div>
+        <div class="card">
+            <h2>100000 UC - ₹5000</h2>
+            <img src="assets/qr5.jpeg" alt="QR for 5000">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 BGMI Top Up Store | Powered by UPI</p>
+    </footer>
+</body>
+</html>

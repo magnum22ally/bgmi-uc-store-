@@ -1,0 +1,16 @@
+
+Invoice - BGMI TOP UP STORE
+---------------------------------
+Customer: ____________
+Date: ____________
+
+Purchase Details:
+1. 5000 UC - ₹1000
+2. 15000 UC - ₹2000
+3. 25000 UC - ₹2500
+4. 50000 UC - ₹4500
+5. 100000 UC - ₹5000
+
+Payment via UPI: shariff.12@superyes
+
+Thank you for your purchase!
